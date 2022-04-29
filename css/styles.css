@@ -53,6 +53,8 @@ button {
 }
 
 img {
+  width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -218,9 +220,11 @@ img {
   background: var(--hero);
 }
 .hero-list {
-  max-width: 696px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+
+  max-width: 696px;
 
   font-family: inherit;
   font-weight: 900;
@@ -234,7 +238,6 @@ img {
 }
 
 .hero-btn {
-  margin-top: 30px;
   margin-bottom: 0%;
 
   padding: 10px 32px 10px 32px;
@@ -258,16 +261,16 @@ img {
   color: var(--header-color);
 }
 /* --------------------------------------------------------------main------------------------------------------------------------ */
-.main-sections {
-  padding-top: 94px;
+.main-bottom {
   padding-bottom: 94px;
+}
+
+.main-section {
+  padding: 94px 0;
   background: var(--header);
-  background-color: aquamarine;
 }
 
 .main-item {
-  padding-top: 94px;
-
   display: flex;
 }
 
@@ -279,6 +282,13 @@ img {
 .main-margin {
   display: inline;
   margin-right: 30px;
+
+  width: 270px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 .main-margin:last-child {
@@ -310,6 +320,7 @@ img {
 }
 
 .section {
+  background: #f5f4fa;
   padding: 94px 0;
 }
 /* --------------------------------------------------------------team------------------------------------------------------------ */
@@ -377,6 +388,8 @@ img {
 }
 
 .footer-logo {
+  display: inline-block;
+
   margin-bottom: 20px;
   color: #2196f3;
 }
@@ -389,10 +402,10 @@ img {
   padding-bottom: 0;
 }
 .cont-padding {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .cont-padding:last-child {
-  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .footer-item {
@@ -407,8 +420,6 @@ img {
 }
 
 .footer-address {
-  margin-top: 20px;
-
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -455,8 +466,6 @@ img {
 }
 
 .portfolio-img-flex {
-  margin: -24px;
-
   display: flex;
   flex-wrap: wrap;
 }
@@ -490,8 +499,6 @@ img {
 } */
 
 .portfolio-text {
-  padding-top: 20px;
-
   font-family: inherit;
   font-size: 18px;
   line-height: 2;
@@ -501,9 +508,6 @@ img {
 }
 
 .portfolio-list {
-  padding-top: 4px;
-  padding-bottom: 20px;
-
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
@@ -530,10 +534,12 @@ img {
 
 /* --------------------------------flex-box--------------------------------------- */
 .flex-box {
-  margin: 15px;
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
-.flex-box:nth-last-child(-n + 3) {
+.flex-box:nth-child(1n + 7) {
   margin-bottom: 0;
 }
 
@@ -546,5 +552,11 @@ img {
 }
 
 .text-box {
-  margin: 0 24px;
+  padding-bottom: 4px;
+}
+
+.portfolio-list-test {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
